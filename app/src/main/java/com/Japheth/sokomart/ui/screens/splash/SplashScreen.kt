@@ -26,6 +26,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.Japheth.sokomart.R
 import com.Japheth.sokomart.navigation.ROUT_DASHBOARD
+import com.Japheth.sokomart.navigation.ROUT_LOGIN
 import com.Japheth.sokomart.ui.screens.more.MoreScreen
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -38,7 +39,7 @@ fun SplashScreen(navController: NavController){
     val coroutine = rememberCoroutineScope()
      coroutine.launch {
          delay(1000)
-         navController.navigate(ROUT_DASHBOARD)
+         navController.navigate(ROUT_LOGIN)
 
 
      }
